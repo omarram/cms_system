@@ -1,0 +1,18 @@
+<%= number_to_currency(44.473, :precision => 0, :unit => "JD", :format => "%n %u") %> <br>
+
+<%= number_to_percentage(99.456759, :precision => 4, :separator => ",") %> <br>
+
+<%= number_with_precision(55.6789, :precision => 8) %> <br>
+
+<%= number_with_delimiter(123456789) %> <br>
+
+<%= number_to_human(4395636, :precision => 3) %> <br>
+
+<%= number_to_human_size(1024) %>
+<%= number_to_human_size(2048) %>
+<%= number_to_human_size(1048576) %> <br>
+
+<%= number_to_phone(796508800) %> <br>
+<%= number_to_phone(796508800, :area_code => true) %> <br>
+<%= number_to_phone(796508800, :area_code => true, :country_code => 962) %> <br>
+<%= number_to_phone(796508800, :area_code => true, :country_code => 962, :delimiter => " ") %>

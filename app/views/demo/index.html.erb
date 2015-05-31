@@ -1,0 +1,25 @@
+<h1>Demo#index</h1>
+<p>Find me in app/views/demo/index.html.erb</p>
+<%= 1+9 %> <br> <br>
+<%@ar.each do |a|%>
+<%= a %> <br>
+<%end%>
+
+<a href='/demo/hello'> go to hello template </a> <br> <br>
+<%= link_to('hello page', :controller => 'demo', :action => 'hello') %> <br> <br> <br>
+
+<%= link_to('index page 10', :controller => 'demo', :action => 'index', :id => 3, :page => 10) %> <br> <br> <br>
+<%= link_to('hello page 11', :controller => 'demo', :action => 'hello', :id => 3, :page => 11) %> <br> <br> <br>
+
+ID: <%= params[:id] %> <br>
+
+next page ID: <%= @id.to_i+1 %>
+
+<br />
+<% name = "Omar" %>
+<% name = "Sorry!'); alert('I hacked you!" %>
+
+
+<%= link_to('say whaaaat?', '#', :onclick => "jsSayName('#{j(name)}'); return true;") %>         
+
+<%= javascript_tag("jsSayName('#{j(name)}');") %>
